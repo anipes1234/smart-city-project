@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart City Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌆 Smart City Management System</h1>
+    <p id="clock"></p>
+</header>
+
+<div class="container">
+
+    <!-- Traffic -->
+    <div class="card">
+        <h2>🚦 Traffic Control</h2>
+        <p id="traffic">মাঝারি ট্রাফিক</p>
+        <button onclick="changeTraffic()">Change Status</button>
+    </div>
+
+    <!-- Street Light -->
+    <div class="card">
+        <h2>💡 Smart Street Light</h2>
+        <p id="lightStatus">Light OFF</p>
+        <button onclick="toggleLight()">ON / OFF</button>
+    </div>
+
+    <!-- Waste -->
+    <div class="card">
+        <h2>🗑 Waste Level</h2>
+        <p id="wasteLevel">৫০% Full</p>
+        <button onclick="updateWaste()">Update Waste</button>
+    </div>
+
+    <!-- Energy -->
+    <div class="card">
+        <h2>⚡ Energy Usage</h2>
+        <div class="progress">
+            <div id="energyBar"></div>
+        </div>
+        <button onclick="updateEnergy()">Check Usage</button>
+    </div>
+
+    <!-- Emergency -->
+    <div class="card">
+        <h2>🚨 Emergency Alert</h2>
+        <button onclick="showAlert()">Trigger Alert</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
